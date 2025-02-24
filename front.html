@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>NoteHub - Your Academic Companion</title>
+    <link rel="stylesheet" href="nh.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>NoteHub</h1>
+            </div>
+            <ul>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Your Academic Companion</h2>
+        <p>Find study materials, resources, and assistance based on your branch and semester.</p>
+        <form class="search-form">
+            <select id="branch" name="branch">
+                <option value="" disabled selected>Select your branch</option>
+                <option value="cs">Computer Science</option>
+                <option value="ece"> Electronics and Communications </option>
+                <option value="eee"> Electrical and Electronics </option>
+                <option value="civ"> Civil Engineering </option>
+                <option value="mec">Mechanical Engineering</option>
+                <option value="chem"> Chemical Engineering </option>
+            </select>
+            <select id="semester" name="semester">
+                <option value="" disabled selected>Select your semester</option>
+                <option value="1">1st Semester</option>
+                <option value="2">2nd Semester</option>
+                <option value="3">3rd Semester</option>
+                <option value="4">4th Semester</option>
+            </select>
+            <button onclick="window.location.href='sec2.html';"> Find Resources </button>
+        </form>
+    </section>
+    <section class="about" id="resources">
+        <h3>Resources</h3>
+        <p>Explore study notes, past papers, books, and more, customized for your branch and semester.</p>
+        <a href="sec2.html">Explore Now</a>
+    </section>
+    <section class="contact" id="contact">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, feel free to reach out!</p>
+        <a href="contact.html">Contact Us</a>
+    </section>
+    <section class="feedback" id="feedback">
+        <h3> Feedback </h3>
+        <p> We hope to improve our webpage based on your valuable feedback!</p>
+        <a href="feed.html"> Feedback </a>
+    </section>
+    <footer>
+        <p>&copy; 2025 NoteHub. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>

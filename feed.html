@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #333;
+                padding: 2rem;
+            }
+
+            h1 {
+                color: #ff6f61; 
+                font-size: 2rem;
+
+            }
+
+            p {
+                color: #333;
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            form {
+
+                background-color: white;
+                padding: 2rem;
+                border-radius: 8px;
+                
+            }
+
+            label {
+                font-size: 1rem;
+            }
+
+ 
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #ff6f61; 
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #e45748; 
+            }
+
+            fieldset {
+                border: none;
+                margin-bottom: 1.5rem;
+            }
+
+            legend {
+                font-size: 1.3rem;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Feedback Form:</h1>
+        <form>
+            <fieldset>
+                <legend>1. How would you rate the content of the webpage?</legend>
+                <label>
+                    <input type="radio" name="feedback" value="Excellent"> Excellent
+                </label><br>
+                <label>
+                    <input type="radio" name="feedback" value="Good"> Good
+                </label><br>
+                <label>
+                    <input type="radio" name="feedback" value="Average"> Average
+                </label><br>
+                <label>
+                    <input type="radio" name="feedback" value="Poor"> Poor
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Is the content useful?</legend>
+                <label>
+                    <input type="radio" name="usefulness" value="Excellent"> Excellent
+                </label><br>
+                <label>
+                    <input type="radio" name="usefulness" value="Good"> Good
+                </label><br>
+                <label>
+                    <input type="radio" name="usefulness" value="Average"> Average
+                </label><br>
+                <label>
+                    <input type="radio" name="usefulness" value="Poor"> Poor
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Any suggestions if necessary:</legend>
+                <input type="text" placeholder="Your suggestions...">
+            </fieldset>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </body>
+</html>
